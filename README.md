@@ -21,9 +21,9 @@ You can run the code in Google Colab. Click on the following button to open the 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sgNx9jQL4n-Fa8nVMDokadGHl9ZDV8yl)
 
-## Documentation
+## Methodology
 
-For detailed documentation on the project, refer to the [Documentation](Documentation/) folder.
+For detailed Methodology on the project, refer to the [Methodology](Methodology/) folder.
 
 ## Contributors
 
