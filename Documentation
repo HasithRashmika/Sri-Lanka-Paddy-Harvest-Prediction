@@ -1,0 +1,114 @@
+import os
+
+# Create Documentation directory if it doesn't exist
+documentation_dir = "Documentation"
+if not os.path.exists(documentation_dir):
+    os.makedirs(documentation_dir)
+
+# Project Description
+project_description = """
+# Project Description
+
+This project aims to develop a regression model to predict historical paddy harvests in Sri Lanka based on district-level data, climate conditions, and agricultural practices. It explores district-level variations, climate-driven analysis, and implications for sustainable rice production and food security.
+
+## Objectives
+
+- Develop a regression model for predicting historical paddy harvests.
+- Explore district-level variations in paddy harvests.
+- Assess the impact of climate conditions and agricultural practices on harvest yields.
+- Predict future paddy harvests based on projected changes in climate conditions and agricultural practices.
+"""
+
+# Data Description
+data_description = """
+# Data Description
+
+The dataset contains the following columns:
+
+- **Districts**: Districts in Sri Lanka
+- **Year**: Year of observation
+- **Season**: Season of paddy cultivation (Yala or Maha)
+- **Avg_Temperature**: Average temperature during the season
+- **Avg_rainfall**: Average rainfall during the season
+- **Land_Area**: Land area dedicated to paddy cultivation
+- **Fertilizer**: Amount of fertilizer used
+- **Yeild**: Paddy harvest yield
+
+## Preprocessing
+
+- Cleaned missing values and outliers.
+- Encoded categorical variables.
+- Scaled numerical features.
+"""
+
+# Data Preprocessing
+data_preprocessing = """
+# Data Preprocessing
+
+The dataset underwent the following preprocessing steps:
+
+1. **Handling Missing Values**: Missing values were imputed or dropped based on the context.
+2. **Encoding Categorical Variables**: Categorical variables were encoded using one-hot encoding or label encoding.
+3. **Scaling Numerical Features**: Numerical features were scaled to a standard range using Min-Max scaling or Standard scaling.
+"""
+
+# Exploratory Data Analysis
+eda_description = """
+# Exploratory Data Analysis
+
+Insights from exploratory data analysis (EDA):
+
+- Visualized distributions, relationships, and patterns in the data.
+- Examined correlations between variables.
+- Identified outliers and anomalies.
+"""
+
+# Regression Modeling
+regression_modeling = """
+# Regression Modeling
+
+The regression modeling approach included:
+
+- Selection of regression algorithms (e.g., Linear Regression, Random Forest Regression).
+- Feature engineering techniques (e.g., polynomial features, feature scaling).
+- Model evaluation metrics (e.g., Mean Absolute Error, R-squared).
+- Hyperparameter tuning using techniques like cross-validation.
+"""
+
+# Results and Interpretation
+results_interpretation = """
+# Results and Interpretation
+
+Key results from the regression modeling:
+
+- Performance metrics of the predictive model.
+- Interpretation of regression coefficients and feature importance.
+- Discussion of significant predictors and their impact on harvest yields.
+"""
+
+# Conclusion and Future Work
+conclusion_future_work = """
+# Conclusion and Future Work
+
+Summary of project findings and implications:
+
+- Key insights for sustainable rice production and food security in Sri Lanka.
+- Limitations of the study and areas for future research.
+"""
+
+# Write each markdown file
+documents = {
+    "Project_Description.md": project_description,
+    "Data_Description.md": data_description,
+    "Data_Preprocessing.md": data_preprocessing,
+    "Exploratory_Data_Analysis.md": eda_description,
+    "Regression_Modeling.md": regression_modeling,
+    "Results_and_Interpretation.md": results_interpretation,
+    "Conclusion_and_Future_Work.md": conclusion_future_work
+}
+
+for filename, content in documents.items():
+    with open(os.path.join(documentation_dir, filename), "w") as file:
+        file.write(content)
+
+print("Documentation files created successfully!")
