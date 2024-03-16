@@ -23,7 +23,7 @@ You can run the code in Google Colab. Click on the following button to open the 
 
 ## Methodology
 
-For detailed Methodology on the project, refer to the [Methodology](Methodology/) folder.
+For detailed Methodology on the project, refer to the [Methodology](Methodology.pdf/) folder.
 
 ## Contributors
 
