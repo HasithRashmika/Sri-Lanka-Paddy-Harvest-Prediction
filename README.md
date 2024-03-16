@@ -27,7 +27,7 @@ For detailed documentation on the project, refer to the [Documentation](Document
 
 ## Contributors
 
-- [HasithRashmika](link to your GitHub profile)
+- [HasithRashmika](https://github.com/HasithRashmika)
 
 ## License
 
